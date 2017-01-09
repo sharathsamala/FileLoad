@@ -1,7 +1,7 @@
 '''
 Created on Dec 30, 2016
 
-@author: SC00359878
+@author: Sharath samala
 '''
 import os
 import commands
@@ -16,7 +16,7 @@ cfgName='jobRunner.cfg'
 configPath = os.getcwd() + '/' + cfgName
 
 
-logPath='D:\\sc00359878\\ATT\\CARAT\\workspace5\\FileLoaderSpark\\logs\\' + scriptName + '.log'
+logPath='D:\\xx\\xx\\x\\\xx\\\xxx\\xx\\' + scriptName + '.log'
 
 
 def main():
@@ -44,8 +44,8 @@ def main():
     logger.info('extract_id = ' + str(extract_id))
     db.insertSparkLogtable(extract_id, params['jobName'], 'move_to_hdfs', 'Start', 'no exception')
     try:
-        commands.getoutput('hadoop fs -mkdir /home/ds272q/input/* /user/ds272q/transfer/extract_id')
-        hdir_list = commands.getoutput('hadoop fs -put /home/ds272q/input/* /user/ds272q/transfer/extract_id/')
+        commands.getoutput('hadoop fs -mkdir /home/test/input/* /user/test/transfer/extract_id')
+        hdir_list = commands.getoutput('hadoop fs -put /home/test/input/* /user/test/transfer/extract_id/')
     except Exception:
         logger.error(traceback.print_exc())
         db.updateSparkLogtable(extract_id, params['jobName'], 'move_to_hdfs', 'Error', 'no exception')
