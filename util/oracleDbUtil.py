@@ -1,7 +1,7 @@
 #**************************************************************************
 #* Class wrapper for connecting to Oracle and executing queries against it 
 #*
-#* Author: ss6040
+#* Author: sharathsamala
 #* Date: 12/30/2016
 #**************************************************************************
 import traceback
