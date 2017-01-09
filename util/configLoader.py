@@ -1,8 +1,5 @@
 #***********************************************************************************************
 #* Loads the configuration from .cfg file in current directory and returns the params dictionary
-#*
-#* Author: Kapil Sharma
-#* Date: 08/30/2016
 #***********************************************************************************************
 def getConfig(configPath, logger):
     params = {} 
