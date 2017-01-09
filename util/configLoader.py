@@ -22,7 +22,7 @@ def getConfig(configPath, logger):
             
             if key == "emailFrom":
                 if '@' not in value:
-                    params[key] = value.strip() + '@att.com' 
+                    params[key] = value.strip() + '@email.com' 
                 else:
                     params[key] = value.strip()            
             elif key == 'emailTo':
@@ -30,7 +30,7 @@ def getConfig(configPath, logger):
             
                 for email in value.strip().split(','):
                     if '@' not in email:
-                        emailTo.append(email.strip() + '@att.com')
+                        emailTo.append(email.strip() + '@email.com')
                     else:
                         emailTo.append(email.strip())
                         
