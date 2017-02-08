@@ -2,8 +2,6 @@
 #* Class wrapper for capturing logs on cosole as well as log file rotated on daily basis
 #* their output
 #*
-#* Author: Kapil Sharma (ks515n)
-#* Date: 06/14/2016
 #***************************************************************************************
 
 import logging
